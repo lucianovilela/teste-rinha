@@ -1,0 +1,651 @@
+RUN	RinhaBackendCrebitosSimulation	rinhabackendcrebitossimulation	1707445114154	Rinha de Backend - 2024/Q1: Crébito	3.10.3
+USER	validações	START	1707445115063
+REQUEST		validações	1707445115086	1707445115099	OK	 
+REQUEST		validações	1707445115204	1707445175205	KO	Request timeout to localhost/127.0.0.1:9999 after 60000 ms
+REQUEST		validações	1707445175211	1707445210662	KO	j.i.IOException: Premature close
+REQUEST		validações	1707445210663	1707445210665	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		validações	1707445210666	1707445210667	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		validações	1707445210667	1707445210668	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		validações	1707445210669	1707445210669	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		validações	1707445210670	1707445210671	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		validações	1707445210671	1707445210672	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		validações	1707445210672	1707445210673	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	validações	END	1707445210674
+USER	extratos	START	1707445211085
+REQUEST		extratos	1707445211084	1707445211086	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445211086
+USER	débitos	START	1707445211088
+USER	créditos	START	1707445211088
+REQUEST		créditos	1707445211087	1707445211089	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445211089
+REQUEST		débitos	1707445211087	1707445211089	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445211089
+USER	extratos	START	1707445212072
+REQUEST		extratos	1707445212071	1707445212072	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445212073
+USER	créditos	START	1707445212073
+USER	débitos	START	1707445212073
+REQUEST		créditos	1707445212072	1707445212074	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445212074
+REQUEST		débitos	1707445212072	1707445212074	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445212074
+USER	débitos	START	1707445212321
+REQUEST		débitos	1707445212320	1707445212322	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445212322
+USER	créditos	START	1707445212570
+USER	débitos	START	1707445212571
+REQUEST		créditos	1707445212569	1707445212571	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445212570	1707445212572	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445212572
+USER	débitos	END	1707445212572
+USER	débitos	START	1707445212822
+REQUEST		débitos	1707445212821	1707445212823	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445212823
+USER	extratos	START	1707445213070
+USER	débitos	START	1707445213070
+REQUEST		débitos	1707445213069	1707445213071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		extratos	1707445213069	1707445213071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	START	1707445213071
+USER	extratos	END	1707445213071
+USER	débitos	END	1707445213071
+REQUEST		créditos	1707445213070	1707445213072	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445213072
+USER	débitos	START	1707445213237
+REQUEST		débitos	1707445213236	1707445213238	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445213238
+USER	créditos	START	1707445213323
+REQUEST		créditos	1707445213322	1707445213325	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445213325
+USER	débitos	START	1707445213405
+REQUEST		débitos	1707445213404	1707445213406	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445213406
+USER	débitos	START	1707445213572
+USER	créditos	START	1707445213573
+REQUEST		débitos	1707445213571	1707445213573	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445213573
+REQUEST		créditos	1707445213571	1707445213574	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445213575
+USER	débitos	START	1707445213738
+REQUEST		débitos	1707445213737	1707445213739	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445213740
+USER	créditos	START	1707445213822
+REQUEST		créditos	1707445213821	1707445213824	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445213824
+USER	débitos	START	1707445213915
+REQUEST		débitos	1707445213914	1707445213916	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445213916
+USER	extratos	START	1707445214070
+USER	débitos	START	1707445214071
+REQUEST		extratos	1707445214069	1707445214072	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445214070	1707445214072	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445214072
+USER	créditos	START	1707445214072
+USER	débitos	END	1707445214072
+REQUEST		créditos	1707445214071	1707445214072	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445214073
+USER	débitos	START	1707445214214
+REQUEST		débitos	1707445214212	1707445214215	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445214216
+USER	créditos	START	1707445214320
+REQUEST		créditos	1707445214320	1707445214321	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445214322
+USER	débitos	START	1707445214356
+REQUEST		débitos	1707445214355	1707445214356	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445214357
+USER	débitos	START	1707445214499
+REQUEST		débitos	1707445214498	1707445214500	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445214500
+USER	créditos	START	1707445214570
+REQUEST		créditos	1707445214569	1707445214571	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445214571
+USER	débitos	START	1707445214643
+REQUEST		débitos	1707445214642	1707445214644	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445214644
+USER	débitos	START	1707445214786
+REQUEST		débitos	1707445214785	1707445214787	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445214788
+USER	créditos	START	1707445214820
+REQUEST		créditos	1707445214820	1707445214821	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445214821
+USER	débitos	START	1707445214929
+REQUEST		débitos	1707445214928	1707445214930	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445214930
+USER	créditos	START	1707445215071
+REQUEST		créditos	1707445215070	1707445215071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445215072
+USER	débitos	START	1707445215074
+USER	extratos	START	1707445215075
+REQUEST		débitos	1707445215072	1707445215077	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215078
+REQUEST		extratos	1707445215073	1707445215079	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445215081
+USER	débitos	START	1707445215181
+REQUEST		débitos	1707445215180	1707445215181	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215182
+USER	créditos	START	1707445215270
+REQUEST		créditos	1707445215270	1707445215271	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445215271
+USER	débitos	START	1707445215293
+REQUEST		débitos	1707445215292	1707445215294	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215294
+USER	débitos	START	1707445215403
+REQUEST		débitos	1707445215402	1707445215404	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215404
+USER	créditos	START	1707445215470
+REQUEST		créditos	1707445215470	1707445215471	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445215471
+USER	débitos	START	1707445215517
+REQUEST		débitos	1707445215515	1707445215519	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215520
+USER	débitos	START	1707445215626
+REQUEST		débitos	1707445215625	1707445215627	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215627
+USER	créditos	START	1707445215670
+REQUEST		créditos	1707445215670	1707445215671	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445215671
+USER	débitos	START	1707445215736
+REQUEST		débitos	1707445215735	1707445215737	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215737
+USER	débitos	START	1707445215848
+REQUEST		débitos	1707445215847	1707445215849	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215849
+USER	créditos	START	1707445215870
+REQUEST		créditos	1707445215870	1707445215871	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445215871
+USER	débitos	START	1707445215961
+REQUEST		débitos	1707445215960	1707445215963	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445215964
+USER	créditos	START	1707445216069
+REQUEST		créditos	1707445216069	1707445216070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	START	1707445216070
+USER	créditos	END	1707445216070
+USER	débitos	START	1707445216071
+REQUEST		extratos	1707445216069	1707445216071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445216071
+REQUEST		débitos	1707445216070	1707445216072	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216072
+USER	débitos	START	1707445216160
+REQUEST		débitos	1707445216159	1707445216160	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216161
+USER	créditos	START	1707445216235
+REQUEST		créditos	1707445216235	1707445216236	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445216236
+USER	débitos	START	1707445216251
+REQUEST		débitos	1707445216250	1707445216252	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216252
+USER	débitos	START	1707445216342
+REQUEST		débitos	1707445216341	1707445216343	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216343
+USER	créditos	START	1707445216403
+REQUEST		créditos	1707445216402	1707445216404	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445216404
+USER	débitos	START	1707445216433
+REQUEST		débitos	1707445216432	1707445216434	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216434
+USER	débitos	START	1707445216525
+REQUEST		débitos	1707445216524	1707445216526	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216526
+USER	extratos	START	1707445216569
+USER	créditos	START	1707445216569
+REQUEST		extratos	1707445216569	1707445216570	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		créditos	1707445216569	1707445216570	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445216570
+USER	extratos	END	1707445216570
+USER	débitos	START	1707445216617
+REQUEST		débitos	1707445216615	1707445216620	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216621
+USER	débitos	START	1707445216707
+REQUEST		débitos	1707445216706	1707445216708	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216708
+USER	créditos	START	1707445216736
+REQUEST		créditos	1707445216736	1707445216737	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445216737
+USER	débitos	START	1707445216797
+REQUEST		débitos	1707445216797	1707445216798	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216798
+USER	débitos	START	1707445216888
+REQUEST		débitos	1707445216888	1707445216889	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216889
+USER	créditos	START	1707445216903
+REQUEST		créditos	1707445216903	1707445216903	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445216904
+USER	débitos	START	1707445216979
+REQUEST		débitos	1707445216979	1707445216980	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445216980
+USER	débitos	START	1707445217069
+USER	extratos	START	1707445217069
+USER	créditos	START	1707445217069
+REQUEST		débitos	1707445217069	1707445217070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		extratos	1707445217069	1707445217070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		créditos	1707445217069	1707445217070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445217070
+USER	extratos	END	1707445217070
+USER	débitos	END	1707445217070
+USER	débitos	START	1707445217146
+REQUEST		débitos	1707445217145	1707445217147	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217147
+USER	créditos	START	1707445217212
+REQUEST		créditos	1707445217211	1707445217212	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445217213
+USER	débitos	START	1707445217223
+REQUEST		débitos	1707445217222	1707445217224	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217224
+USER	débitos	START	1707445217300
+REQUEST		débitos	1707445217299	1707445217300	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217301
+USER	créditos	START	1707445217354
+REQUEST		créditos	1707445217354	1707445217355	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445217355
+USER	débitos	START	1707445217380
+REQUEST		débitos	1707445217379	1707445217381	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217381
+USER	débitos	START	1707445217457
+REQUEST		débitos	1707445217456	1707445217458	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217458
+USER	créditos	START	1707445217498
+REQUEST		créditos	1707445217497	1707445217499	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445217499
+USER	débitos	START	1707445217531
+REQUEST		débitos	1707445217531	1707445217532	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217532
+USER	débitos	START	1707445217610
+REQUEST		débitos	1707445217609	1707445217611	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217611
+USER	créditos	START	1707445217641
+REQUEST		créditos	1707445217640	1707445217641	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445217642
+USER	débitos	START	1707445217685
+REQUEST		débitos	1707445217685	1707445217686	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217686
+USER	débitos	START	1707445217762
+REQUEST		débitos	1707445217762	1707445217763	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217764
+USER	créditos	START	1707445217784
+REQUEST		créditos	1707445217784	1707445217785	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445217785
+USER	débitos	START	1707445217839
+REQUEST		débitos	1707445217839	1707445217840	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217840
+USER	débitos	START	1707445217916
+REQUEST		débitos	1707445217915	1707445217917	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217917
+USER	créditos	START	1707445217927
+REQUEST		créditos	1707445217927	1707445217927	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445217928
+USER	débitos	START	1707445217993
+REQUEST		débitos	1707445217993	1707445217994	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445217994
+USER	débitos	START	1707445218070
+USER	créditos	START	1707445218070
+USER	extratos	START	1707445218070
+REQUEST		créditos	1707445218069	1707445218071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445218069	1707445218071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218071
+REQUEST		extratos	1707445218070	1707445218071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218071
+USER	extratos	END	1707445218072
+USER	débitos	START	1707445218135
+REQUEST		débitos	1707445218135	1707445218136	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218136
+USER	créditos	START	1707445218195
+REQUEST		créditos	1707445218194	1707445218195	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218196
+USER	débitos	START	1707445218203
+REQUEST		débitos	1707445218202	1707445218203	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218204
+USER	débitos	START	1707445218270
+REQUEST		débitos	1707445218269	1707445218270	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218270
+USER	créditos	START	1707445218321
+REQUEST		créditos	1707445218321	1707445218322	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218322
+USER	débitos	START	1707445218336
+REQUEST		débitos	1707445218335	1707445218336	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218337
+USER	débitos	START	1707445218403
+REQUEST		débitos	1707445218402	1707445218404	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218404
+USER	créditos	START	1707445218445
+REQUEST		créditos	1707445218445	1707445218446	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218446
+USER	débitos	START	1707445218470
+REQUEST		débitos	1707445218469	1707445218471	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218471
+USER	débitos	START	1707445218537
+REQUEST		débitos	1707445218536	1707445218538	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218538
+USER	extratos	START	1707445218570
+REQUEST		extratos	1707445218569	1707445218570	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445218571
+USER	créditos	START	1707445218574
+REQUEST		créditos	1707445218572	1707445218577	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218577
+USER	débitos	START	1707445218603
+REQUEST		débitos	1707445218602	1707445218604	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218604
+USER	débitos	START	1707445218670
+REQUEST		débitos	1707445218670	1707445218671	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218671
+USER	créditos	START	1707445218695
+REQUEST		créditos	1707445218695	1707445218696	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218696
+USER	débitos	START	1707445218736
+REQUEST		débitos	1707445218735	1707445218737	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218737
+USER	débitos	START	1707445218803
+REQUEST		débitos	1707445218802	1707445218804	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218804
+USER	créditos	START	1707445218821
+REQUEST		créditos	1707445218821	1707445218822	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218822
+USER	débitos	START	1707445218870
+REQUEST		débitos	1707445218870	1707445218871	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218871
+USER	débitos	START	1707445218936
+REQUEST		débitos	1707445218935	1707445218937	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445218937
+USER	créditos	START	1707445218946
+REQUEST		créditos	1707445218945	1707445218947	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445218947
+USER	débitos	START	1707445219003
+REQUEST		débitos	1707445219003	1707445219004	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219004
+USER	débitos	START	1707445219069
+USER	extratos	START	1707445219069
+USER	créditos	START	1707445219070
+REQUEST		débitos	1707445219069	1707445219070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		extratos	1707445219069	1707445219070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		créditos	1707445219069	1707445219070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445219070
+USER	débitos	END	1707445219070
+USER	créditos	END	1707445219070
+USER	débitos	START	1707445219132
+REQUEST		débitos	1707445219131	1707445219133	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219133
+USER	créditos	START	1707445219195
+USER	débitos	START	1707445219195
+REQUEST		débitos	1707445219194	1707445219196	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219196
+REQUEST		créditos	1707445219194	1707445219196	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445219197
+USER	débitos	START	1707445219256
+REQUEST		débitos	1707445219256	1707445219258	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219258
+USER	débitos	START	1707445219320
+REQUEST		débitos	1707445219319	1707445219320	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219321
+USER	créditos	START	1707445219325
+REQUEST		créditos	1707445219323	1707445219326	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445219326
+USER	débitos	START	1707445219382
+REQUEST		débitos	1707445219381	1707445219383	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219384
+USER	créditos	START	1707445219444
+USER	débitos	START	1707445219445
+REQUEST		créditos	1707445219444	1707445219445	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445219444	1707445219445	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445219445
+USER	débitos	END	1707445219445
+USER	débitos	START	1707445219506
+REQUEST		débitos	1707445219506	1707445219507	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219507
+USER	créditos	START	1707445219569
+USER	débitos	START	1707445219569
+USER	extratos	START	1707445219569
+REQUEST		créditos	1707445219569	1707445219570	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445219569	1707445219570	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		extratos	1707445219569	1707445219570	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445219570
+USER	débitos	END	1707445219570
+USER	extratos	END	1707445219570
+USER	débitos	START	1707445219632
+REQUEST		débitos	1707445219632	1707445219633	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219633
+USER	débitos	START	1707445219694
+USER	créditos	START	1707445219694
+REQUEST		débitos	1707445219694	1707445219695	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		créditos	1707445219694	1707445219695	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445219695
+USER	débitos	END	1707445219695
+USER	débitos	START	1707445219757
+REQUEST		débitos	1707445219757	1707445219758	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219758
+USER	créditos	START	1707445219820
+USER	débitos	START	1707445219820
+REQUEST		créditos	1707445219819	1707445219821	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445219819	1707445219821	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445219821
+USER	débitos	END	1707445219821
+USER	débitos	START	1707445219882
+REQUEST		débitos	1707445219882	1707445219883	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219883
+USER	créditos	START	1707445219945
+USER	débitos	START	1707445219945
+REQUEST		créditos	1707445219944	1707445219945	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445219944	1707445219945	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445219945
+USER	créditos	END	1707445219945
+USER	débitos	START	1707445220008
+REQUEST		débitos	1707445220007	1707445220008	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220009
+USER	extratos	START	1707445220069
+USER	débitos	START	1707445220069
+USER	créditos	START	1707445220070
+REQUEST		extratos	1707445220069	1707445220070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445220069	1707445220070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445220070
+USER	débitos	END	1707445220070
+REQUEST		créditos	1707445220069	1707445220070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220071
+USER	débitos	START	1707445220122
+REQUEST		débitos	1707445220121	1707445220122	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220123
+USER	créditos	START	1707445220169
+REQUEST		créditos	1707445220169	1707445220170	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220170
+USER	débitos	START	1707445220175
+REQUEST		débitos	1707445220174	1707445220176	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220176
+USER	débitos	START	1707445220227
+REQUEST		débitos	1707445220226	1707445220227	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220228
+USER	créditos	START	1707445220271
+REQUEST		créditos	1707445220270	1707445220272	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220272
+USER	débitos	START	1707445220280
+REQUEST		débitos	1707445220279	1707445220280	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220280
+USER	débitos	START	1707445220333
+REQUEST		débitos	1707445220333	1707445220334	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220334
+USER	créditos	START	1707445220370
+REQUEST		créditos	1707445220369	1707445220371	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220371
+USER	débitos	START	1707445220385
+REQUEST		débitos	1707445220385	1707445220386	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220386
+USER	débitos	START	1707445220438
+REQUEST		débitos	1707445220438	1707445220439	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220439
+USER	créditos	START	1707445220469
+REQUEST		créditos	1707445220469	1707445220470	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220470
+USER	débitos	START	1707445220493
+REQUEST		débitos	1707445220492	1707445220494	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220495
+USER	débitos	START	1707445220543
+REQUEST		débitos	1707445220543	1707445220544	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220544
+USER	créditos	START	1707445220570
+REQUEST		créditos	1707445220569	1707445220570	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220571
+USER	débitos	START	1707445220596
+REQUEST		débitos	1707445220596	1707445220597	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220597
+USER	débitos	START	1707445220648
+REQUEST		débitos	1707445220648	1707445220649	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220649
+USER	créditos	START	1707445220670
+REQUEST		créditos	1707445220669	1707445220670	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220671
+USER	débitos	START	1707445220701
+REQUEST		débitos	1707445220700	1707445220701	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220702
+USER	débitos	START	1707445220754
+REQUEST		débitos	1707445220754	1707445220755	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220755
+USER	créditos	START	1707445220769
+REQUEST		créditos	1707445220769	1707445220770	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220770
+USER	débitos	START	1707445220809
+REQUEST		débitos	1707445220808	1707445220811	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220812
+USER	débitos	START	1707445220859
+REQUEST		débitos	1707445220859	1707445220859	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220860
+USER	créditos	START	1707445220871
+REQUEST		créditos	1707445220870	1707445220871	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220872
+USER	débitos	START	1707445220912
+REQUEST		débitos	1707445220912	1707445220913	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220913
+USER	débitos	START	1707445220964
+REQUEST		débitos	1707445220964	1707445220965	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445220965
+USER	créditos	START	1707445220971
+REQUEST		créditos	1707445220970	1707445220972	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445220972
+USER	débitos	START	1707445221018
+REQUEST		débitos	1707445221017	1707445221019	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221019
+USER	débitos	START	1707445221069
+REQUEST		débitos	1707445221069	1707445221070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	START	1707445221070
+USER	extratos	START	1707445221070
+USER	débitos	END	1707445221070
+REQUEST		créditos	1707445221069	1707445221071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		extratos	1707445221069	1707445221071	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221071
+USER	extratos	END	1707445221071
+USER	débitos	START	1707445221119
+REQUEST		débitos	1707445221119	1707445221120	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221120
+USER	débitos	START	1707445221169
+USER	créditos	START	1707445221170
+REQUEST		débitos	1707445221169	1707445221170	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221170
+REQUEST		créditos	1707445221169	1707445221171	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221171
+USER	débitos	START	1707445221219
+REQUEST		débitos	1707445221219	1707445221220	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221220
+USER	créditos	START	1707445221270
+REQUEST		créditos	1707445221269	1707445221270	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221271
+USER	débitos	START	1707445221273
+REQUEST		débitos	1707445221271	1707445221275	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221276
+USER	débitos	START	1707445221319
+REQUEST		débitos	1707445221319	1707445221320	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221320
+USER	créditos	START	1707445221369
+USER	débitos	START	1707445221369
+REQUEST		créditos	1707445221369	1707445221370	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445221369	1707445221370	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221370
+USER	créditos	END	1707445221370
+USER	débitos	START	1707445221420
+REQUEST		débitos	1707445221419	1707445221420	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221421
+USER	débitos	START	1707445221470
+USER	créditos	START	1707445221470
+REQUEST		débitos	1707445221469	1707445221470	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		créditos	1707445221469	1707445221470	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221470
+USER	débitos	END	1707445221471
+USER	débitos	START	1707445221520
+REQUEST		débitos	1707445221519	1707445221522	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221522
+USER	débitos	START	1707445221570
+USER	créditos	START	1707445221570
+USER	extratos	START	1707445221570
+REQUEST		créditos	1707445221569	1707445221571	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		débitos	1707445221569	1707445221571	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221571
+USER	débitos	END	1707445221571
+REQUEST		extratos	1707445221569	1707445221571	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	extratos	END	1707445221571
+USER	débitos	START	1707445221620
+REQUEST		débitos	1707445221619	1707445221620	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221620
+USER	débitos	START	1707445221670
+USER	créditos	START	1707445221670
+REQUEST		débitos	1707445221669	1707445221670	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		créditos	1707445221669	1707445221670	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221671
+USER	débitos	END	1707445221671
+USER	débitos	START	1707445221721
+REQUEST		débitos	1707445221720	1707445221722	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221722
+USER	débitos	START	1707445221770
+USER	créditos	START	1707445221770
+REQUEST		débitos	1707445221770	1707445221771	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221771
+REQUEST		créditos	1707445221770	1707445221771	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221771
+USER	débitos	START	1707445221820
+REQUEST		débitos	1707445221819	1707445221820	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221820
+USER	débitos	START	1707445221870
+USER	créditos	START	1707445221870
+REQUEST		débitos	1707445221869	1707445221870	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221870
+REQUEST		créditos	1707445221870	1707445221871	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221871
+USER	débitos	START	1707445221920
+REQUEST		débitos	1707445221919	1707445221920	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221920
+USER	débitos	START	1707445221970
+USER	créditos	START	1707445221970
+REQUEST		débitos	1707445221969	1707445221970	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445221970
+REQUEST		créditos	1707445221970	1707445221970	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445221971
+USER	débitos	START	1707445222020
+REQUEST		débitos	1707445222019	1707445222020	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445222020
+USER	débitos	START	1707445222069
+USER	extratos	START	1707445222069
+USER	créditos	START	1707445222070
+REQUEST		créditos	1707445222069	1707445222070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445222070
+REQUEST		débitos	1707445222069	1707445222070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+REQUEST		extratos	1707445222069	1707445222070	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445222071
+USER	extratos	END	1707445222071
+USER	débitos	START	1707445222114
+REQUEST		débitos	1707445222114	1707445222115	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445222115
+USER	créditos	START	1707445222153
+REQUEST		créditos	1707445222153	1707445222154	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445222154
+USER	débitos	START	1707445222159
+REQUEST		débitos	1707445222159	1707445222160	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445222160
+USER	débitos	START	1707445222207
+REQUEST		débitos	1707445222206	1707445222209	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445222210
+USER	créditos	START	1707445222236
+REQUEST		créditos	1707445222235	1707445222236	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445222236
+USER	débitos	START	1707445222250
+REQUEST		débitos	1707445222250	1707445222251	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445222251
+USER	débitos	START	1707445222296
+REQUEST		débitos	1707445222296	1707445222297	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	débitos	END	1707445222297
+USER	créditos	START	1707445222320
+REQUEST		créditos	1707445222320	1707445222320	KO	j.n.ConnectException: finishConnect(..) failed: Connection refused
+USER	créditos	END	1707445222321
+USER	débitos	START	1707445222342
+REQUEST		débitos	1707445222341	1707445222343	KO	

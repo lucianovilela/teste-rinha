@@ -8,7 +8,7 @@ var morgan = require('morgan')
 require('dotenv').config();
 
 const app = express();
-app.use(morgan());
+app.use(morgan("combined"));
 
 app.use(bodyParser.json());
 const port = process.env.PORT || 9999;
@@ -55,28 +55,28 @@ app.get('/clientes/:id/extrato', async (req, res) => {
 
 app.post('/clientes/:id/transacoes', async (req, res) => {
   try {
-    await poll.query('BEGIN');
-    const client = await pool.query(`select a.limite, b.valor from clientes c inner join saldos b on a.id = b.cliente_id where a.id=$1 for update`, [req.params.id]);
+    await pool.query('BEGIN');
+    const client = await pool.query(`select c.limite, b.valor from clientes c inner join saldos b on c.id = b.cliente_id where c.id=$1 for update`, [req.params.id]);
     if (client.rowCount === 0) {
-      await poll.query('END');
+      await pool.query('ROLLBACK');
       return res.status(404);
     }
-    if (req.body.params.tipo === "d"
-      && Math.abs(client.rows[0].limite) < (req.body.params.valor * 1)) {
-      await poll.query('END');
+    if (req.body.tipo === "d"
+      && Math.abs(client.rows[0].limite) < (req.body.valor * 1)) {
+      await pool.query('ROLLBACK');
       return res.status(422);
     }
 
-    const valor = req.body.params.tipo === "d" ? req.body.params.valor * -1 : req.body.params.valor * 1;
-    const novoSaldo = await pool.query('UPDATE saldos VALUES saldo = saldo + $2 where cliente_id = $1 returning saldo', [req.params.id, valor])
+    const valor = req.body.tipo === "d" ? req.body.valor * -1 : req.body.valor * 1;
+    const novoSaldo = await pool.query('UPDATE saldos SET valor = valor + $2 where cliente_id = $1 RETURNING valor', [req.params.id, valor])
     await pool.query('INSERT INTO transacoes(cliente_id, valor, tipo, descricao) values ($1, $2, $3, $4)',
-      [req.params.id, req.body.params.valor * 1, req.body.params.tipo, req.body.params.descricao]);
-    await poll.query('COMMIT');
-    await poll.query('END');
-    return res.status(200).json({limite:client.rows[0].limite, saldo:saldo})
+      [req.params.id, req.body.valor * 1, req.body.tipo, req.body.descricao]);
+    await pool.query('COMMIT');
+    return res.status(200).json({limite:client.rows[0].limite, saldo:novoSaldo.rows[0].valor})
   } catch (error) {
+    await pool.query('ROLLBACK');
     console.error('Erro ao buscar dados:', error);
-    res.status(500);
+    return res.status(500);
   }
 
 })
