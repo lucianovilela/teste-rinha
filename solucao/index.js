@@ -2,11 +2,13 @@
 
 const express = require('express');
 const { Pool } = require('pg');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+var morgan = require('morgan')
 
 require('dotenv').config();
 
 const app = express();
+app.use(morgan());
 
 app.use(bodyParser.json());
 const port = process.env.PORT || 9999;
@@ -44,7 +46,7 @@ app.get('/clientes/:id/extrato', async (req, res) => {
 
     }
 
-    res.status(200).json(result)
+    return res.status(200).json(result);
   } catch (error) {
     console.error('Erro ao buscar dados:', error);
     res.status(500);
@@ -66,11 +68,12 @@ app.post('/clientes/:id/transacoes', async (req, res) => {
     }
 
     const valor = req.body.params.tipo === "d" ? req.body.params.valor * -1 : req.body.params.valor * 1;
-    await pool.query('UPDATE saldos VALUES saldo = saldo + $2 where cliente_id = $1', [req.params.id, valor])
-    const novoSaldo = await pool.query('INSERT INTO transacoes(cliente_id, valor, tipo, descricao) values ($1, $2, $3, $4)',
+    const novoSaldo = await pool.query('UPDATE saldos VALUES saldo = saldo + $2 where cliente_id = $1 returning saldo', [req.params.id, valor])
+    await pool.query('INSERT INTO transacoes(cliente_id, valor, tipo, descricao) values ($1, $2, $3, $4)',
       [req.params.id, req.body.params.valor * 1, req.body.params.tipo, req.body.params.descricao]);
     await poll.query('COMMIT');
     await poll.query('END');
+    return res.status(200).json({limite:client.rows[0].limite, saldo:saldo})
   } catch (error) {
     console.error('Erro ao buscar dados:', error);
     res.status(500);
