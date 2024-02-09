@@ -3,12 +3,12 @@
 const express = require('express');
 const { Pool } = require('pg');
 const bodyParser = require('body-parser');
-var morgan = require('morgan')
+//var morgan = require('morgan')
 
 require('dotenv').config();
 
 const app = express();
-app.use(morgan("combined"));
+//app.use(morgan("combined"));
 
 app.use(bodyParser.json());
 const port = process.env.PORT || 9999;
@@ -58,13 +58,13 @@ app.post('/clientes/:id/transacoes', async (req, res) => {
     await pool.query('BEGIN');
     const client = await pool.query(`select c.limite, b.valor from clientes c inner join saldos b on c.id = b.cliente_id where c.id=$1 for update`, [req.params.id]);
     if (client.rowCount === 0) {
-      await pool.query('ROLLBACK');
+      await pool.query('ROLLBACK').json();
       return res.status(404);
     }
     if (req.body.tipo === "d"
-      && Math.abs(client.rows[0].limite) < (req.body.valor * 1)) {
+      && Math.abs(client.rows[0].valor) < (req.body.valor * 1)) {
       await pool.query('ROLLBACK');
-      return res.status(422);
+      return res.status(422).json();
     }
 
     const valor = req.body.tipo === "d" ? req.body.valor * -1 : req.body.valor * 1;
@@ -76,7 +76,7 @@ app.post('/clientes/:id/transacoes', async (req, res) => {
   } catch (error) {
     await pool.query('ROLLBACK');
     console.error('Erro ao buscar dados:', error);
-    return res.status(500);
+    return res.status(500).json();
   }
 
 })
