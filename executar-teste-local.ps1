@@ -1,7 +1,7 @@
 # Use este script para executar testes locais
 
 $RESULTS_WORKSPACE = "$(Get-Location)\load-test\user-files\results"
-$GATLING_BIN_DIR = "$env:USERPROFILE\gatling\3.10.3\bin"
+$GATLING_BIN_DIR = "$env:USERPROFILE\gatling-charts-highcharts-bundle-3.10.3\bin"
 $GATLING_WORKSPACE = "$(Get-Location)\load-test\user-files"
 
 function Run-Gatling {

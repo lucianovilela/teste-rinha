@@ -23,8 +23,13 @@ const pool = new Pool({
 
 });
 
+
+
 // Rota para buscar dados do banco
 app.get('/clientes/:id/extrato', async (req, res) => {
+
+
+
   try {
     const client = await pool.query(`select * from clientes where id=$1`, [req.params.id]);
     if (client.rowCount === 0) return res.status(404);
@@ -53,7 +58,19 @@ app.get('/clientes/:id/extrato', async (req, res) => {
   }
 });
 
+const validateRequest = (req) => {
+  const valor = parseInt(req.body.valor);
+  const descricao = req.body.descricao; 
+  if(valor === undefined || valor < 0 || descricao === undefined || descricao === null || descricao.length > 10  ) return false;
+  
+  return true;
+
+}
+
 app.post('/clientes/:id/transacoes', async (req, res) => {
+  if(!validateRequest(req)){
+    return res.send(422).json();
+  }
   try {
     await pool.query('BEGIN');
     const client = await pool.query(`select c.limite, b.valor from clientes c inner join saldos b on c.id = b.cliente_id where c.id=$1 for update`, [req.params.id]);
@@ -72,7 +89,7 @@ app.post('/clientes/:id/transacoes', async (req, res) => {
     await pool.query('INSERT INTO transacoes(cliente_id, valor, tipo, descricao) values ($1, $2, $3, $4)',
       [req.params.id, req.body.valor * 1, req.body.tipo, req.body.descricao]);
     await pool.query('COMMIT');
-    return res.status(200).json({limite:client.rows[0].limite, saldo:novoSaldo.rows[0].valor})
+    return res.status(200).json({ limite: client.rows[0].limite, saldo: novoSaldo.rows[0].valor })
   } catch (error) {
     await pool.query('ROLLBACK');
     console.error('Erro ao buscar dados:', error);
@@ -82,6 +99,7 @@ app.post('/clientes/:id/transacoes', async (req, res) => {
 })
 
 // Inicie o servidor
-app.listen(port, () => {
+app.listen(port, async () => {
+
   console.log(`Servidor rodando na porta ${port}`);
 });
