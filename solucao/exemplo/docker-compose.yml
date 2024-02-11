@@ -2,7 +2,9 @@ version: "3.5"
 
 services:
   api01: &api
-    image: zanfranceschi/rinha-2024q1-crebito
+    build:
+      dockerfile: Dockerfile
+
     hostname: api01
     environment:
       - DB_HOSTNAME=db
@@ -52,7 +54,7 @@ services:
       - "5432:5432"
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-    command: postgres -c checkpoint_timeout=600 -c max_wal_size=4096 -c deadlock_timeout=5s
+    command: postgres -c checkpoint_timeout=600 -c max_wal_size=4096 
     deploy:
       resources:
         limits:
