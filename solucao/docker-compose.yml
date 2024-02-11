@@ -7,10 +7,13 @@ services:
 
     hostname: api01
     environment:
-      - DB_HOSTNAME=db
-      - PORT=3000
+      - USERDB=admin
+      - HOSTDB=db
+      - DB=rinha
+      - PASSWORDDB=123
+      - PORT=9000
     ports:
-      - "3001:3000"
+      - "9000:3000"
     depends_on:
       - db
     deploy:
@@ -23,10 +26,14 @@ services:
     <<: *api
     hostname: api02
     environment:
-      - DB_HOSTNAME=db
-      - PORT=3000
+      - USERDB=admin
+      - HOSTDB=db
+      - DB=rinha
+      - PASSWORDDB=123
+      - PORT=9001
+
     ports:
-      - "3002:3000"
+      - "9001:3000"
   
   nginx:
     image: nginx:latest
