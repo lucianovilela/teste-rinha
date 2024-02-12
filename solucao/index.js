@@ -20,7 +20,7 @@ const pool = new Pool({
   database: process.env.DB,
   password: process.env.PASSWORDDB,
   port: 5432, // Porta padrão do PostgreSQL
-  max:process.env.MAX || 40,
+  max:process.env.MAX || 20,
 
 });
 
@@ -29,13 +29,13 @@ const pool = new Pool({
 // Rota para buscar dados do banco
 app.get('/clientes/:id/extrato', async (req, res) => {
 
-
+  const clientConnect = await pool.connect();
 
   try {
-    const client = await pool.query(`select * from clientes where id=$1`, [req.params.id]);
-    if (client.rowCount === 0) return res.status(404);
-    const saldo = await pool.query(`select * from saldos where cliente_id=$1`, [req.params.id]);
-    const trans = await pool.query(`select * from transacoes where cliente_id=$1 order by  realizada_em desc limit 10`, [req.params.id]);
+    const client = await clientConnect.query(`select * from clientes where id=$1`, [req.params.id]);
+    if (client.rowCount === 0) return res.status(404).json();
+    const saldo = await clientConnect.query(`select * from saldos where cliente_id=$1`, [req.params.id]);
+    const trans = await clientConnect.query(`select * from transacoes where cliente_id=$1 order by  realizada_em desc limit 10`, [req.params.id]);
     const transacoes = trans.rows.map(item => ({
       valor: item.valor,
       tipo: item.tipo,
@@ -55,7 +55,10 @@ app.get('/clientes/:id/extrato', async (req, res) => {
     return res.status(200).json(result);
   } catch (error) {
     console.error('Erro ao buscar dados:', error);
-    res.status(500);
+    res.status(500).json();
+  }
+  finally{
+    clientConnect.release();
   }
 });
 

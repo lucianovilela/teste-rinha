@@ -1,20 +1,29 @@
-# Use a imagem oficial do Node.js como base
-FROM node:17
+# Etapa 1: Construir a imagem intermediária
+FROM node:17 AS builder
 
-# Define o diretório de trabalho dentro do contêiner
-WORKDIR /usr/src/app
+# Define o diretório de trabalho
+WORKDIR /app
 
-# Copie o arquivo package.json e package-lock.json para o diretório de trabalho
+# Copia o arquivo package.json e package-lock.json
 COPY package*.json ./
 
-# Instale as dependências do projeto
+# Instala as dependências
 RUN npm install
 
-# Copie o código-fonte da aplicação para o diretório de trabalho
+# Copia o restante dos arquivos do projeto
 COPY . .
 
-# Exponha a porta em que a aplicação estará disponível (por exemplo, 3000)
-EXPOSE 3000
+# Realiza o build do projeto (substitua pelo seu comando de build específico)
+#RUN npm run build
 
-# Comando para iniciar a aplicação
-CMD ["npm", "run", "startNode"]
+# Etapa 2: Criar a imagem final
+FROM node:17
+
+# Define o diretório de trabalho para a imagem final
+WORKDIR /app
+
+# Copia os arquivos construídos da imagem intermediária
+COPY --from=builder /app .
+
+# Define o comando para iniciar o aplicativo (substitua pelo seu comando específico)
+CMD ["node", "index.js"]
