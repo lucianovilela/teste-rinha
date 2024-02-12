@@ -80,7 +80,7 @@ const validateRequest = (req) => {
 
 app.post('/clientes/:id/transacoes', async (req, res) => {
   if (!validateRequest(req)) {
-    return res.send(422).json();
+    return res.status(422).json();
   }
   const clientConnect = await pool.connect();
   try {
