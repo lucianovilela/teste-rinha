@@ -20,6 +20,7 @@ const pool = new Pool({
   database: process.env.DB,
   password: process.env.PASSWORDDB,
   port: 5432, // Porta padrão do PostgreSQL
+  max:process.env.MAX || 40,
 
 });
 

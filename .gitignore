@@ -3,3 +3,4 @@ executar-testes-final.sh
 RESULTADOS.md
 RESULTADOS-HEADER.md
 node_modules/* 
+/load-test/user-files/results/*
